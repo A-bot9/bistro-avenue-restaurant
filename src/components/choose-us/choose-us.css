@@ -26,3 +26,15 @@
 .single__feature p {
 	font-size: 0.7rem;
 }
+
+.feature__icon-two {
+	background: #2ace92 !important;
+}
+
+.feature__icon-3 {
+	background: #f5b70a !important;
+}
+
+.feature__icon-4 {
+	background: #7865ff !important;
+}
