@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import pastaImg from '../../assets/images/pasta.png';
+import deliveryImg from '../../assets/images/delivery01.jpeg';
 import './choose-us.css';
 
 const ChooseUs = () => {
@@ -8,25 +8,24 @@ const ChooseUs = () => {
 		<section>
 			<Container>
 				<Row>
-					<Col lg="6">
-						<img src={pastaImg} alt="" className="w-100" />
+					<Col md="6" lg="6">
+						<img src={deliveryImg} alt="" className="w-75 deliveryImg mb-4" />
 					</Col>
 
-					<Col lg="6">
+					<Col md="6" lg="6">
 						<div className="choose__content">
 							<h4>Who we are?</h4>
 							<h2>Take a look at the benefits we offer you</h2>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 						</div>
 
 						<div className="features mt-4">
-							<div className="feature1 d-flex align-items-center justify-content-between gap-5">
-								<div className="single__feature">
+							<div className="d-flex mt-3 align-items-center justify-content-between gap-5">
+								<div className="single__feature ">
 									<span>
 										<i className="ri-truck-line"></i>
 									</span>
 									<h6>Free Home Delivery</h6>
-									<p>Lorem ipsum dolor sit amet.</p>
+									<p>NO EXTRA CHARGE</p>
 								</div>
 
 								<div className="single__feature">
@@ -34,17 +33,17 @@ const ChooseUs = () => {
 										<i className="ri-money-dollar-circle-line"></i>
 									</span>
 									<h6>Return & Refund</h6>
-									<p>Lorem ipsum dolor sit amet.</p>
+									<p>GURANTEED</p>
 								</div>
 							</div>
 
-							<div className="feature1 mt-3 d-flex align-items-center justify-content-between gap-5">
+							<div className="d-flex mt-3 flex align-items-center justify-content-between gap-5">
 								<div className="single__feature">
 									<span className="feature__icon-3">
 										<i className="ri-secure-payment-line"></i>
 									</span>
 									<h6>Secure Payment</h6>
-									<p>Lorem ipsum dolor sit amet.</p>
+									<p>100% NO WORRIES</p>
 								</div>
 
 								<div className="single__feature">
@@ -52,7 +51,7 @@ const ChooseUs = () => {
 										<i className="ri-24-hours-line"></i>
 									</span>
 									<h6>24/7 Hours Support</h6>
-									<p>Lorem ipsum dolor sit amet.</p>
+									<p>ALL DAY EVERYDAY</p>
 								</div>
 							</div>
 						</div>

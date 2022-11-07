@@ -13,7 +13,7 @@
 
 body,
 html {
-	background-color: #0a071a;
+	background-color: rgb(41, 37, 37);
 }
 
 section,
@@ -26,7 +26,7 @@ h2 {
 	font-size: 2rem;
 	font-weight: 500;
 	font-family: 'Poppins', sans-serif;
-	color: #f5b70a;
+	color: #e7a822;
 }
 
 p {
@@ -43,4 +43,10 @@ a {
 
 i {
 	color: #fff;
+}
+
+@media only screen and(max-width: 767px) {
+	section {
+		padding: 40px 0px;
+	}
 }

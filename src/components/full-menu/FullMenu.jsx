@@ -2,25 +2,25 @@ import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import ProductCard from '../product-card/ProductCard';
 import {
-	fastFoodProducts,
-	riceMenuProducts,
+	sandwichProducts,
+	burgerProducts,
 	pizzaProducts,
 	dessertProducts,
 	coffeeProducts,
 } from '../../assets/fake-data/products';
 import './menu-pack.css';
 
-const MenuPack = () => {
-	const [filter, setFilter] = useState('RICE-MENU');
-	const [products, setProducts] = useState(pizzaProducts);
+const FullMenu = () => {
+	const [filter, setFilter] = useState('SANDWICH');
+	const [products, setProducts] = useState(sandwichProducts);
 
 	useEffect(() => {
-		if (filter === 'RICE-MENU') {
-			setProducts(riceMenuProducts);
+		if (filter === 'BURGER') {
+			setProducts(burgerProducts);
 		}
 
-		if (filter === 'FAST-FOOD') {
-			setProducts(fastFoodProducts);
+		if (filter === 'SANDWICH') {
+			setProducts(sandwichProducts);
 		}
 
 		if (filter === 'PIZZA') {
@@ -36,24 +36,24 @@ const MenuPack = () => {
 		}
 	}, [filter]);
 	return (
-		<section>
+		<section id="menu">
 			<Container>
 				<Row>
 					<Col lg="12" className="text-center mb-4">
-						<h3 className="menu__title">Our Menu Pack</h3>
+						<h3 className="menu__title">Our Full Menu</h3>
 					</Col>
 					<Col lg="12" className="text-center mb-5">
 						<button
-							className={`filter-btn ${filter === 'FAST-FOOD' ? 'active__btn' : ''}`}
-							onClick={() => setFilter('FAST-FOOD')}
+							className={`filter-btn ${filter === 'SANDWICH' ? 'active__btn' : ''}`}
+							onClick={() => setFilter('SANDWICH')}
 						>
-							Fast Food
+							Sandwiches
 						</button>
 						<button
-							className={`filter-btn ${filter === 'RICE-MENU' ? 'active__btn' : ''}`}
-							onClick={() => setFilter('RICE-MENU')}
+							className={`filter-btn ${filter === 'BURGER' ? 'active__btn' : ''}`}
+							onClick={() => setFilter('BURGER')}
 						>
-							Rice Menu
+							Burgers
 						</button>
 						<button
 							className={`filter-btn ${filter === 'PIZZA' ? 'active__btn' : ''}`}
@@ -76,8 +76,8 @@ const MenuPack = () => {
 					</Col>
 
 					{products.map((item) => (
-						<Col lg="3" key={item.id} className="mb-3">
-							<ProductCard item={item}></ProductCard>
+						<Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mb-4">
+							<ProductCard item={item} />
 						</Col>
 					))}
 				</Row>
@@ -86,4 +86,4 @@ const MenuPack = () => {
 	);
 };
 
-export default MenuPack;
+export default FullMenu;

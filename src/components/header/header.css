@@ -6,7 +6,13 @@
 	top: 0;
 	left: 0;
 	z-index: 9;
-	background: #141124;
+	background: black;
+	font-family: 'Oswald', sans-serif;
+}
+
+.title__font {
+	font-family: 'Lobster', cursive;
+	cursor: pointer;
 }
 
 .navigation {
@@ -28,13 +34,13 @@
 }
 
 .nav__item a {
-	color: #fff;
+	color: #c4c4c4;
 	cursor: pointer;
 	transition: 0.3s;
 }
 
 .nav__item a:hover {
-	color: #f5b70a;
+	color: #e7a822;
 }
 
 .custom__search {
@@ -43,14 +49,14 @@
 	padding: 10px 25px;
 	height: 35px;
 	border-radius: 50px;
-	background: #0a071a;
+	background: rgb(41, 37, 37);
 }
 
 .custom__search input {
 	border: none;
 	outline: none;
 	background: transparent;
-	color: #fff; /* Changes text when typing */
+	color: #c4c4c4; /* Changes text when typing */
 }
 
 .custom__search span i {
@@ -65,13 +71,20 @@
 	display: none;
 }
 
+.mobile__close {
+	position: absolute;
+	z-index: 100;
+	top: 10px;
+	right: 20px;
+}
+
 .cart__icon {
 	position: relative;
-	z-index: 999;
+	z-index: 98;
 	width: 40px;
 	height: 30px;
 	border-radius: 5px;
-	background: #f76e11;
+	background: red;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -90,13 +103,15 @@
 @media only screen and (max-width: 992px) {
 	.nav__menu {
 		position: fixed;
+		transition: all 0.5s ease-in;
+		transform: translateX(100%);
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
 		z-index: 99;
-		background: #0a071a7e;
-		display: none;
+		background: #0000007e;
+		display: block;
 	}
 
 	.nav__list__wrapper {
@@ -106,9 +121,9 @@
 		width: 250px;
 		height: 100%;
 		z-index: 100;
-		background: #141124;
+		background: black;
 		flex-direction: column;
-		box-shadow: 5px 5px 15px 5px #f5b70a;
+		box-shadow: 5px 5px 15px 5px #e7a822;
 		justify-content: center !important;
 		padding: 0px 20px;
 	}
@@ -123,6 +138,7 @@
 
 	.header {
 		line-height: 40px;
+		height: 60px;
 		padding: 10px 0px;
 	}
 
@@ -142,7 +158,14 @@
 		font-size: 1.5rem;
 	}
 
+	/* Slider Menu that goes right to left*/
 	.active__menu {
 		display: block;
+		transform: translateX(0%);
+		z-index: 99;
+	}
+
+	.mobile__close {
+		z-index: 100;
 	}
 }
