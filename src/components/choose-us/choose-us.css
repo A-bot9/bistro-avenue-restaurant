@@ -9,6 +9,11 @@
 	margin-bottom: 10px;
 }
 
+.deliveryImg {
+	border: 1px solid;
+	border-radius: 20px;
+}
+
 .single__feature span i {
 	font-size: 1.5rem;
 }
@@ -37,4 +42,26 @@
 
 .feature__icon-4 {
 	background: #7865ff !important;
+}
+
+@media only screen and (max-width: 992px) {
+	.choose__content h2 {
+		font-size: 1.5rem;
+	}
+
+	.choose__content h4 {
+		font-size: 1rem;
+	}
+
+	.choose__content p {
+		font-size: 0.8rem;
+	}
+
+	.single__feature h6 {
+		font-size: 0.8rem;
+	}
+
+	.single__feature p {
+		font-size: 0.6rem;
+	}
 }

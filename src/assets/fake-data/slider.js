@@ -1,27 +1,27 @@
 import sliderImg01 from '../images/slider1.png';
-import sliderImg02 from '../images/slider2.png';
-import sliderImg03 from '../images/slider03.png';
+import burger from '../images/burger02.png';
+import pizza from '../images/pizza4.png';
 
 export const sliderData = [
 	{
 		id: '01',
 		title: 'We have simple and delicious food for you',
 		desc:
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi animi, itaque ipsum magnam quae alias omnis veniam dolor fugiat similique voluptas consectetur corrupti odit quisquam incidunt quia architecto voluptate molestiae?',
+			'These are our famous wings you will not find them on our menu, and can only order them online. Can get them in 6ct for $9.99 or 12ct for $18.99',
 		imgUrl: sliderImg01,
 	},
 	{
 		id: '02',
 		title: 'We believe good food over great smile',
 		desc:
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi animi, itaque ipsum magnam quae alias omnis veniam dolor fugiat similique voluptas consectetur corrupti odit quisquam incidunt quia architecto voluptate molestiae?',
-		imgUrl: sliderImg02,
+			'#1 Ranked pizza in the whole US, our pizza is truly something special and only for $15.99',
+		imgUrl: pizza,
 	},
 	{
 		id: '03',
 		title: 'Meet, Eat and Enjoy the true test',
 		desc:
-			'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi animi, itaque ipsum magnam quae alias omnis veniam dolor fugiat similique voluptas consectetur corrupti odit quisquam incidunt quia architecto voluptate molestiae?',
-		imgUrl: sliderImg03,
+			'The famous Bistro Avenue burgers will make your mouth water, every bite feels like the first. We have 3 different types check them out',
+		imgUrl: burger,
 	},
 ];

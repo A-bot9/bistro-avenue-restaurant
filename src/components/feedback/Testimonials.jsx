@@ -4,7 +4,7 @@ import testimonialImg from '../../assets/images/review2.jpg';
 import Slider from 'react-slick';
 import './testimonial.css';
 
-const Testimonials = () => {
+const Feedback = () => {
 	const settings = {
 		infinite: true,
 		speed: 500,
@@ -57,4 +57,4 @@ const Testimonials = () => {
 	);
 };
 
-export default Testimonials;
+export default Feedback;

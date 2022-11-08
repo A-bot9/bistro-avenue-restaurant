@@ -1,9 +1,11 @@
 import React, { Fragment } from 'react';
 import ChooseUs from '../components/choose-us/ChooseUs';
+import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
 import HeroSlider from '../components/hero-slider/HeroSlider';
-import MenuPack from '../components/menu-pack/MenuPack';
+import FullMenu from '../components/full-menu/FullMenu';
 import PopularMenu from '../components/popular-menu/PopularMenu';
+import Feedback from '../components/feedback/Testimonials';
 
 const Home = () => {
 	return (
@@ -12,7 +14,9 @@ const Home = () => {
 			<HeroSlider />
 			<PopularMenu />
 			<ChooseUs />
-			<MenuPack />
+			<FullMenu />
+			<Feedback />
+			<Footer />
 		</Fragment>
 	);
 };
